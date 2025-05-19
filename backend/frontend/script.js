@@ -10,7 +10,7 @@ registerForm.addEventListener("submit", async (e) => {
     password: document.getElementById("regPassword").value
   };
 
-  const response = await fetch("http://127.0.0.1:8000/register", {
+  const response = await fetch("https://fastapibd-production.up.railway.app/register", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(user)
@@ -29,7 +29,7 @@ loginForm.addEventListener("submit", async (e) => {
     password: document.getElementById("loginPassword").value
   };
 
-  const response = await fetch("http://127.0.0.1:8000/login", {
+  const response = await fetch("https://fastapibd-production.up.railway.app/login", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(credentials)
